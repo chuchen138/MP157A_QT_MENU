@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ObjectDetect</class>
+ <widget class="QMainWindow" name="ObjectDetect">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="openBt">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>520</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#openBt
+{
+    color: rgb(0, 0, 0);
+	border-color:rgb(241, 236, 237);
+    background:rgb(255, 255, 255);
+    border:1px solid grey;
+    border-radius: 10px;
+}
+QPushButton#openBt:hover
+{
+    border-color:rgb(0, 0, 0);
+    background:rgb(220, 220, 220);
+}
+QPushButton#openBt:pressed
+{
+    border-color:rgb(0, 0, 0);
+    background:rgb(190, 190, 190);
+}
+QPushButton#openBt:disabled
+{
+    border-color:rgb(167, 164, 170);
+    background:rgb(167, 164, 170);
+    color: rgb(255,255,255);
+}</string>
+    </property>
+    <property name="text">
+     <string>采集图像</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>501</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(114, 159, 207);
+background-color: rgb(32, 74, 135);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closeBt">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>520</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#closeBt
+{
+    color: rgb(0, 0, 0);
+	border-color:rgb(241, 236, 237);
+    background:rgb(255, 255, 255);
+    border:1px solid grey;
+    border-radius: 10px;
+}
+QPushButton#closeBt:hover
+{
+    border-color:rgb(0, 0, 0);
+    background:rgb(220, 220, 220);
+}
+QPushButton#closeBt:pressed
+{
+    border-color:rgb(0, 0, 0);
+    background:rgb(190, 190, 190);
+}
+QPushButton#closeBt:disabled
+{
+    border-color:rgb(167, 164, 170);
+    background:rgb(167, 164, 170);
+    color: rgb(255,255,255);
+}</string>
+    </property>
+    <property name="text">
+     <string>关闭采集</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_title">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1024</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(114, 159, 207);</string>
+    </property>
+    <property name="text">
+     <string>通信一班一组智能图像识别</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveBt">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>520</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#saveBt
+{
+    color: rgb(0, 0, 0);
+	border-color:rgb(241, 236, 237);
+    background:rgb(255, 255, 255);
+    border:1px solid grey;
+    border-radius: 10px;
+}
+QPushButton#saveBt:hover
+{
+    border-color:rgb(0, 0, 0);
+    background:rgb(220, 220, 220);
+}
+QPushButton#saveBt:pressed
+{
+    border-color:rgb(0, 0, 0);
+    background:rgb(190, 190, 190);
+}
+QPushButton#saveBt:disabled
+{
+    border-color:rgb(167, 164, 170);
+    background:rgb(167, 164, 170);
+    color: rgb(255,255,255);
+}</string>
+    </property>
+    <property name="text">
+     <string>拍照</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>80</y>
+      <width>20</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="recognitionBt">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>160</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#recognitionBt
+{
+    color: rgb(0, 0, 0);
+	border-color:rgb(241, 236, 237);
+    background:rgb(255, 255, 255);
+    border:1px solid grey;
+    border-radius: 10px;
+}
+QPushButton#recognitionBt:hover
+{
+    border-color:rgb(0, 0, 0);
+    background:rgb(220, 220, 220);
+}
+QPushButton#recognitionBt:pressed
+{
+    border-color:rgb(0, 0, 0);
+    background:rgb(190, 190, 190);
+}
+QPushButton#recognitionBt:disabled
+{
+    border-color:rgb(167, 164, 170);
+    background:rgb(167, 164, 170);
+    color: rgb(255,255,255);
+}</string>
+    </property>
+    <property name="text">
+     <string>图像识别</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>220</y>
+      <width>421</width>
+      <height>301</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>100</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*设置组合框样式*/
+QComboBox#comboBox{
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 1px 2px 1px 2px;  /*针对于组合框中的文本内容*/
+}
+/*设置右侧展开按钮的样式和图片*/
+QComboBox#comboBox::drop-down{
+	subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px;
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid; /*画一条单竖线*/
+    border-top-right-radius: 5px; /* 圆角半径同 QComboBox */
+	image:url(:/icon/triangle.png);
+}
+QComboBox#comboBox::drop-down:pressed{	
+	background-color: rgb(180, 180, 180);
+	image: url(:/icon/triangle.png);
+}
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>智能识别</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>物体</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>多物体</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>动物</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>logo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>果蔬</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>植物</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>菜品</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>红酒</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>货币</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>80</y>
+      <width>201</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 13pt &quot;Ubuntu&quot;;</string>
+    </property>
+    <property name="text">
+     <string>请选择要识
+别的模式</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>520</y>
+      <width>291</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 13pt &quot;Ubuntu&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>510</y>
+      <width>191</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 13pt &quot;Ubuntu&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ewm">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>160</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#pushButton_ewm
+{
+    color: rgb(0, 0, 0);
+	border-color:rgb(241, 236, 237);
+    background:rgb(255, 255, 255);
+    border:1px solid grey;
+    border-radius: 10px;
+}
+QPushButton#pushButton_ewm:hover
+{
+    border-color:rgb(0, 0, 0);
+    background:rgb(220, 220, 220);
+}
+QPushButton#pushButton_ewm:pressed
+{
+    border-color:rgb(0, 0, 0);
+    background:rgb(190, 190, 190);
+}
+QPushButton#pushButton_ewm:disabled
+{
+    border-color:rgb(167, 164, 170);
+    background:rgb(167, 164, 170);
+    color: rgb(255,255,255);
+}</string>
+    </property>
+    <property name="text">
+     <string>导入图片</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back_ptn">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>10</y>
+      <width>51</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>36</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(32, 74, 135);</string>
+    </property>
+    <property name="text">
+     <string>x</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

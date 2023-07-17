@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/icon/WIFIbackground.png);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>80</y>
+      <width>571</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 11pt &quot;Ubuntu&quot;;
+background-image:url(:/icon/white.bmp)</string>
+    </property>
+    <property name="title">
+     <string>无线列表</string>
+    </property>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>561</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>559</width>
+        <height>409</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QRadioButton" name="Wlan1">
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Ubuntu&quot;;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Wlan2">
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Ubuntu&quot;;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Wlan3">
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Ubuntu&quot;;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Wlan4">
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Ubuntu&quot;;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Wlan5">
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Ubuntu&quot;;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Wlan6">
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Ubuntu&quot;;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Wlan7">
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Ubuntu&quot;;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Wlan8">
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Ubuntu&quot;;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Wlan9">
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Ubuntu&quot;;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Wlan10">
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Ubuntu&quot;;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Wlan11">
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Ubuntu&quot;;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Wlan12">
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Ubuntu&quot;;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Wlan13">
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Ubuntu&quot;;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Wlan14">
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Ubuntu&quot;;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Wlan15">
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Ubuntu&quot;;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="Wlan16">
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Ubuntu&quot;;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="connectBTN">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>180</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#connectBTN
+{
+    color: rgb(0, 0, 0);
+	border-color:rgb(241, 236, 237);
+    background:rgb(255, 255, 255);
+    border:1px solid grey;
+    border-radius:8px;
+}
+QPushButton#connectBTN:hover
+{
+    border-color:rgb(0, 0, 0);
+    background:rgb(220, 220, 220);
+}
+QPushButton#connectBTN:pressed
+{
+    border-color:rgb(0, 0, 0);
+    background:rgb(190, 190, 190);
+}
+QPushButton#connectBTN:disabled
+{
+    border-color:rgb(167, 164, 170);
+    background:rgb(167, 164, 170);
+    color: rgb(255,255,255);
+}</string>
+    </property>
+    <property name="text">
+     <string>连接网络</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>10</y>
+      <width>351</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(117, 80, 123);
+font: 75 italic 25pt &quot;URW Bookman L&quot;;</string>
+    </property>
+    <property name="text">
+     <string>WiFi连接程序</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="connectBTN_2">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>110</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#connectBTN_2
+{
+    color: rgb(0, 0, 0);
+	border-color:rgb(241, 236, 237);
+    background:rgb(255, 255, 255);
+    border:1px solid grey;
+    border-radius:8px;
+}
+QPushButton#connectBTN_2:hover
+{
+    border-color:rgb(0, 0, 0);
+    background:rgb(220, 220, 220);
+}
+QPushButton#connectBTN_2:pressed
+{
+    border-color:rgb(0, 0, 0);
+    background:rgb(190, 190, 190);
+}
+QPushButton#connectBTN_2:disabled
+{
+    border-color:rgb(167, 164, 170);
+    background:rgb(167, 164, 170);
+    color: rgb(255,255,255);
+}</string>
+    </property>
+    <property name="text">
+     <string>刷新列表</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
